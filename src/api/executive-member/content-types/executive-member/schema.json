@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "executive_members",
+  "info": {
+    "singularName": "executive-member",
+    "pluralName": "executive-members",
+    "displayName": "Executive Member",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "citation": {
+      "type": "richtext"
+    },
+    "socials": {
+      "displayName": "socials",
+      "type": "component",
+      "repeatable": false,
+      "component": "social.socials"
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "present",
+        "initial",
+        "founder",
+        "advisor"
+      ],
+      "required": true,
+      "default": "present"
+    }
+  }
+}

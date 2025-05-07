@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_conferences",
+  "info": {
+    "singularName": "home-conference",
+    "pluralName": "home-conferences",
+    "displayName": "Home Conference"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "videoLink": {
+      "type": "string",
+      "required": true
+    },
+    "longDescription1": {
+      "type": "richtext",
+      "required": true
+    },
+    "longDescription2": {
+      "type": "richtext",
+      "required": true
+    },
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

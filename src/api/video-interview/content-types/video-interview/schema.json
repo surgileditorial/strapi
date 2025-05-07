@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_interviews",
+  "info": {
+    "singularName": "video-interview",
+    "pluralName": "video-interviews",
+    "displayName": "Video Interview"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "date": {
+      "required": true,
+      "type": "date"
+    }
+  }
+}
